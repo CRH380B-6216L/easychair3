@@ -1,0 +1,69 @@
+﻿“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll”。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“E:\Console Project\clientapp_main\clientapp_main\bin\Debug\clientapp_main.vshost.exe”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_64\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationProvider\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationProvider.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\WindowsFormsIntegration\v4.0_4.0.0.0__31bf3856ad364e35\WindowsFormsIntegration.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll”。无法查找或打开 PDB 文件。
+线程 0x2260 已退出，返回值为 259 (0x103)。
+线程 0x2524 已退出，返回值为 259 (0x103)。
+线程 0x17f0 已退出，返回值为 0 (0x0)。
+线程 0x1cfc 已退出，返回值为 259 (0x103)。
+程序“[7856] clientapp_main.vshost.exe”已退出，返回值为 0 (0x0)。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll”。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“E:\Console Project\clientapp_main\clientapp_main\bin\Debug\clientapp_main.vshost.exe”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_64\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll”。无法查找或打开 PDB 文件。
+线程 0x26d0 已退出，返回值为 259 (0x103)。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“E:\Console Project\clientapp_main\clientapp_main\bin\Debug\clientapp_main.exe”。已加载符号。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“E:\Console Project\clientapp_main\clientapp_main\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“E:\Console Project\clientapp_main\clientapp_main\bin\Debug\MyInfo.dll”。已加载符号。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“E:\Console Project\clientapp_main\clientapp_main\bin\Debug\Screen.dll”。已加载符号。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\WindowsFormsIntegration\v4.0_4.0.0.0__31bf3856ad364e35\WindowsFormsIntegration.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework.Aero2\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.Aero2.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework-SystemXmlLinq\v4.0_4.0.0.0__b77a5c561934e089\PresentationFramework-SystemXmlLinq.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework-SystemXml\v4.0_4.0.0.0__b77a5c561934e089\PresentationFramework-SystemXml.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationTypes\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll”。无法查找或打开 PDB 文件。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“E:\Console Project\clientapp_main\clientapp_main\bin\Debug\LanguageScript.dll”。已加载符号。
+“clientapp_main.vshost.exe”(CLR v4.0.30319: clientapp_main.vshost.exe):  已加载“E:\Console Project\clientapp_main\clientapp_main\bin\Debug\SoundControl.dll”。已加载符号。
+线程 0x2260 已退出，返回值为 259 (0x103)。
+线程 0x23a0 已退出，返回值为 259 (0x103)。
+线程 0x17f0 已退出，返回值为 259 (0x103)。
+线程 0x2bc8 已退出，返回值为 0 (0x0)。
+线程 0x276c 已退出，返回值为 259 (0x103)。
+线程 0x28a8 已退出，返回值为 259 (0x103)。
+“System.Runtime.InteropServices.InvalidComObjectException”类型的第一次机会异常在 PresentationFramework.dll 中发生
+“System.Runtime.InteropServices.InvalidComObjectException”类型的第一次机会异常在 PresentationFramework.dll 中发生
+程序“[8992] clientapp_main.vshost.exe”已退出，返回值为 0 (0x0)。

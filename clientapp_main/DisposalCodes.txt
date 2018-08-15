@@ -1,0 +1,318 @@
+﻿    Sub loadRollcall()
+        Dock_NationList.clb_nation_main.Items.Clear()
+        Dim loadnation As New System.IO.StreamReader(lastPath + "\nationlist.txt")
+        Try
+            Do Until loadnation Is Nothing
+                Dock_NationList.clb_nation_main.Items.Add(loadnation.ReadLine)
+            Loop
+            loadnation.Close()
+        Catch ex As Exception
+            loadnation.Close()
+        End Try
+        Dim pload As New System.IO.StreamReader(lastPath + "\nationlist_p.txt")
+        Dim p1, i As Integer
+        Do While i < Dock_NationList.clb_nation_main.Items.Count
+            If pload.ReadLine = "True" Then
+                Dock_NationList.clb_nation_main.SetItemCheckState(i, CheckState.Checked)
+                p1 = p1 + 1
+            Else
+                Dock_NationList.clb_nation_main.SetItemCheckState(i, CheckState.Unchecked)
+            End If
+            i = i + 1
+        Loop
+        pload.Close()
+        Call Dock_NationList.pcalc(p1)
+    End Sub
+		
+        Dim loadInfo As New System.IO.StreamReader(path + "\info.txt")
+        language = loadInfo.ReadLine
+        topicSelection = loadInfo.ReadLine
+        conference = loadInfo.ReadLine
+        committee = loadInfo.ReadLine
+        topic(0) = loadInfo.ReadLine
+        topic(1) = loadInfo.ReadLine
+        myrule = loadInfo.ReadLine
+        If myrule = 2 Then
+            'scMyYear = loadInfo.ReadLine
+            'scInitRes = loadInfo.ReadLine
+        End If
+        loadInfo.Close()
+
+	Sub loadSlist()
+        Try
+            Dim load1 As New System.IO.StreamReader(lastPath + "\speakers.txt")
+            Dock_SpeakersList.slTotal = load1.ReadLine()
+            Dock_SpeakersList.slCurrent = load1.ReadLine()
+            Dock_SpeakersList.slTime(1) = load1.ReadLine()
+            Dock_SpeakersList.slTime(0) = load1.ReadLine()
+            For x = 1 To Dock_SpeakersList.slTotal
+                Dock_SpeakersList.slNations(x) = load1.ReadLine
+                Dock_SpeakersList.slIsSpoken(x) = load1.ReadLine
+                Dim singleItme(3) As String
+                singleItme(1) = Dock_SpeakersList.slNations(x)
+                Dock_SpeakersList.ListView1.Items.Add(New ListViewItem(singleItme))
+            Next
+            load1.Close()
+        Catch ex As Exception
+
+        End Try
+        'Call renderSlist()
+        Dock_SpeakersList.txt_spl_totalnumber.Text = Dock_SpeakersList.slTotal + 1
+        If Dock_SpeakersList.slTotal > 0 Then
+            Dock_SpeakersList.txt_spl_currentnunber.Text = Dock_SpeakersList.slCurrent + 1
+            Dock_SpeakersList.txt_spl_current.Text = Dock_SpeakersList.slNations(Dock_SpeakersList.slCurrent + 1)
+        End If
+        'numtime.Value = slTime(1) * 60 + slTime(0)
+    End Sub
+
+	            If isCslMode Then
+                timingStatus = "CSL"
+                If Not page = cslCurrent \ listCapacity Then
+                    Call autoPage(cslCurrent \ listCapacity)
+                    Call maxPages()
+                End If
+                If Not cslAllowYield Then btn_spl_yieldend.Visible = 1
+                Call cslStringGenerare()
+                cslEdited = 1
+            Else
+        Else
+            'Call timerContinue()
+            Call timerControl(1, 0)
+            btn_spl_start.Text = "暂停"
+            cbx_spl_yield.Enabled = False
+
+            End If
+
+			
+        Dim xeBasic As XmlElement = CType(xnBasic, XmlElement)
+        Form1.myrule = Val(xeBasic.GetAttribute("myrule"))
+        Form1.language = Val(xeBasic.GetAttribute("languange"))
+        Dim xninfo As XmlNode = xeBasic.FirstChild
+        Form1.conference = xninfo.InnerText
+        Dim xnCommittee As XmlNode = xninfo.NextSibling
+        Form1.committee = xnCommittee.InnerText
+        Dim xnTopics As XmlNode = xnCommittee.NextSibling
+        Dim xeTopics As XmlElement = CType(xnTopics, XmlElement)
+        Form1.topicSelection = xeTopics.GetAttribute("topicSelection")
+        If Not Form1.topicSelection = 2 Then
+            Dim xnTopic As XmlNode = xnTopics.ChildNodes(Form1.topicSelection)
+            Form1.topic(Form1.topicSelection) = xnTopic.InnerText
+        End If
+
+
+
+
+        <li>增加了编辑国家详细信息新功能，允许用户向会议数据文件添加国家的投票权限、代表姓名和学校；</li>
+        <li>调整了开启投影模式的过程，使之成功率更高；</li>
+        <li>其实第一个功能在目前还没什么太大用；</li>
+        <li>只是创建了一个新的类（MyInfo.Nation）定义单个国家；</li>
+        <li>添加的项目在代表记录阅读器发布之后才会真正发挥功用；</li>
+        <li>因为这些内容将会加入到数据存档，并且有助于代表、主席在会后根据会议记录进行分析；</li>
+        <li>但是会议记录本身还没弄好呢，只会XML写入；</li>
+        <li>不过加权投票应该快来了，因为提供了投票权限；</li>
+        <li>这次更新让我充分领略到了面向对象的精髓，也能让Console系列程序更好的服务会场；</li>
+        <li>前两天我听说这个软件卖到了上局；</li>
+        <li>这就意味着我需要更先进的编程技术以提供更好的软件功能和体验，这样才能在激烈的市场竞争中站稳；</li>
+        <li>不过这又有什么用呢，又不能拿代码追妹子；</li>
+        <li>算了，就先这样吧；</li>
+        <li>再多说一句，不要在第一会期开始前才想着创建会议；</li>
+        <li>未来版本创建会议时要设定的内容很多，会期前根本来不及；</li>
+        <li>感谢选择Console系列软件，祝会议顺利。</li>
+
+		Public Class RecordSetter
+
+    Public Shared Function GetRecordTypecode(i As RecordCategory) As String
+        Select Case i
+            Case RecordCategory.StartSession
+                Return "ST"
+            Case RecordCategory.RollCall
+                Return "RC"
+            Case RecordCategory.SpeakersList
+                Return "SL"
+            Case RecordCategory.CustomSpeakersList
+                Return "CSL"
+            Case RecordCategory.ModerateCaucus
+                Return "MC"
+            Case RecordCategory.Unmoderated
+                Return "UMC"
+            Case RecordCategory.TeaBreak
+                Return "TB"
+            Case RecordCategory.TeaBreakFromMotion
+                Return "mTB"
+            Case RecordCategory.AdjustSLTime
+                Return "AT"
+            Case RecordCategory.AdjustOrderVote
+                Return "AO"
+            Case RecordCategory.NewVote
+                Return "VT"
+            Case RecordCategory.NewVoteFromMotion
+                Return "mVT"
+            Case RecordCategory.EndDebate
+                Return "ED"
+            Case RecordCategory.SuspendMeeting
+                Return "XH"
+            Case RecordCategory.NewFile
+                Return "NF"
+            Case RecordCategory.FileIntrduction
+                Return "FI"
+            Case RecordCategory.NewCrisis
+                Return "CR"
+            Case Else
+                Return "00"
+        End Select
+    End Function
+
+    Public Shared Function GetRecordCategory(i As String) As String
+        Select Case i
+            Case "ST"
+                Return RecordCategory.StartSession
+            Case "RC"
+                Return RecordCategory.RollCall
+            Case "SL"
+                Return RecordCategory.SpeakersList
+            Case "CSL"
+                Return RecordCategory.CustomSpeakersList
+            Case "MC"
+                Return RecordCategory.ModerateCaucus
+            Case "UMC"
+                Return RecordCategory.Unmoderated
+            Case "TB"
+                Return RecordCategory.TeaBreak
+            Case "mTB"
+                Return RecordCategory.TeaBreakFromMotion
+            Case "AT"
+                Return RecordCategory.AdjustSLTime
+            Case "AO"
+                Return RecordCategory.AdjustOrderVote
+            Case "VT"
+                Return RecordCategory.NewVote
+            Case "mVT"
+                Return RecordCategory.NewVoteFromMotion
+            Case "ED"
+                Return RecordCategory.EndDebate
+            Case "XH"
+                Return RecordCategory.SuspendMeeting
+            Case "NF"
+                Return RecordCategory.NewFile
+            Case "FI"
+                Return RecordCategory.FileIntrduction
+            Case "CR"
+                Return RecordCategory.NewCrisis
+            Case Else
+                Return 0
+        End Select
+    End Function
+End Class
+
+    ''' <summary>
+    ''' 未定义类别。
+    ''' </summary>
+    Undefined = 0
+    ''' <summary>
+    ''' 开始新会期。
+    ''' </summary>
+    StartSession = 1
+    ''' <summary>
+    ''' 点名。
+    ''' </summary>
+    RollCall = 2
+    ''' <summary>
+    ''' 主发言名单。
+    ''' </summary>
+    SpeakersList = 3
+    ''' <summary>
+    ''' 自定发言名单。
+    ''' </summary>
+    CustomSpeakersList = 4
+    ''' <summary>
+    ''' 有主持核心磋商。
+    ''' </summary>
+    ModerateCaucus = 5
+    ''' <summary>
+    ''' 自由磋商。
+    ''' </summary>
+    Unmoderated = 6
+    ''' <summary>
+    ''' 茶歇。
+    ''' </summary>
+    TeaBreak = 7
+    ''' <summary>
+    ''' 动议的茶歇。
+    ''' </summary>
+    TeaBreakFromMotion = 8
+    ''' <summary>
+    ''' 调整主发言名单时间。
+    ''' </summary>
+    AdjustSLTime = 9
+    ''' <summary>
+    ''' 调整投票顺序。
+    ''' </summary>
+    AdjustOrderVote = 10
+    ''' <summary>
+    ''' 对文件投票。
+    ''' </summary>
+    NewVote = 11
+    ''' <summary>
+    ''' 通过动议对文件投票。
+    ''' </summary>
+    NewVoteFromMotion = 12
+    ''' <summary>
+    ''' 结束辩论。
+    ''' </summary>
+    EndDebate = 13
+    ''' <summary>
+    ''' 休会。
+    ''' </summary>
+    SuspendMeeting = 14
+    ''' <summary>
+    ''' 新的会场文件。
+    ''' </summary>
+    NewFile = 15
+    ''' <summary>
+    ''' 介绍文件。
+    ''' </summary>
+    FileIntrduction = 16
+    ''' <summary>
+    ''' 新的危机。
+    ''' </summary>
+    NewCrisis = 17
+    ''' <summary>
+    ''' 自定义文本消息。
+    ''' </summary>
+    CustomText = 18
+
+	
+        Private _recordIndex As Integer
+
+        Public Property RecordIndex() As Integer
+            Get
+                Return _recordIndex
+            End Get
+            Private Set(ByVal value As Integer)
+                _recordIndex = value
+            End Set
+        End Property
+
+		Public Property Reader As RecordReader
+        Public Property Writer As RecordWriter
+
+        Public Sub New(xmlpath As String, NodeName As String)
+            Reader = New RecordReader(xmlpath, NodeName)
+            Writer = New RecordWriter(xmlpath, NodeName)
+        End Sub
+
+        Public Sub New(read As RecordReader, writ As RecordWriter)
+            Reader = read
+            Writer = writ
+        End Sub
+
+		FromXmlReader = New RecordCollection(reader, New RecordWriter(reader.xmlpath, reader.NodeName))
+
+		        'Dock_FileManage.ListBox1.Items.Clear()
+        'For i = 0 To xefile.ChildNodes.Count - 1
+        '    Dim xnSingleFile As XmlNode = xefile.ChildNodes(i)
+        '    Dim xeSingleFile As XmlElement = CType(xnSingleFile, XmlElement)
+        '    Dim SingleName As String = xeSingleFile.GetAttribute("name")
+        '    Dock_FileManage.ListBox1.Items.Add(SingleName)
+        '    FileManage.path(i) = xeSingleFile.InnerText
+        'Next

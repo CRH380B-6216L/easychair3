@@ -1,0 +1,482 @@
+﻿<UserControl x:Name="screen_base" x:Class="UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="639" Width="892" MinWidth="1024" MinHeight="768" FontFamily="Segoe UI, Microsoft Yahei UI">
+    <UserControl.Background>
+        <ImageBrush Stretch="UniformToFill"/>
+    </UserControl.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="16"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="16"/>
+            <RowDefinition/>
+            <RowDefinition Height="39"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3.95*"/>
+            <ColumnDefinition Width="90.31*"/>
+            <ColumnDefinition Width="1.91*"/>
+            <ColumnDefinition Width="240"/>
+            <ColumnDefinition Width="3.95*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="panel_timerbkmk" Grid.Column="3" Grid.RowSpan="4" Background="White">
+            <Grid x:Name="grid_timer" Height="167" Width="240">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="54"/>
+                    <RowDefinition Height="28"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label x:Name="lbltime" Content="2015-1-18　16:45:55" Grid.Row="1" Height="28" Width="240" Background="LimeGreen" FontSize="19" Foreground="White" HorizontalContentAlignment="Center" Padding="0" VerticalContentAlignment="Center" Margin="0"/>
+                <Canvas x:Name="panel_timerbase" Grid.Row="2" Background="DodgerBlue" Margin="0,0,0,-1">
+                    <StackPanel x:Name="stackpanel_timer" Height="85" Width="240">
+                        <Grid x:Name="grid_versie" Height="86" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="26"/>
+                                <RowDefinition Height="39"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Label x:Name="lbl_apptitel" Content="Console - Client App" HorizontalContentAlignment="Center" FontSize="19" Padding="0" Foreground="White" VerticalContentAlignment="Center"/>
+                            <Label x:Name="lbl_mainversie" Content="ver 1.00" Grid.Row="1" HorizontalContentAlignment="Center" Padding="0" FontSize="27" Foreground="White" VerticalContentAlignment="Center"/>
+                            <Label x:Name="lbl_releasedatum" Content="Release datum: 2015-1-19" Grid.Row="2" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" Padding="0" VerticalContentAlignment="Center"/>
+                        </Grid>
+                        <Grid x:Name="grid_present" Height="86" Visibility="Collapsed">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Label x:Name="lblpresent" Content="100" Margin="75,0,0,0" FontSize="27" Padding="0" VerticalContentAlignment="Center" Foreground="White" HorizontalContentAlignment="Right"/>
+                            <Label x:Name="lblpresent1" HorizontalAlignment="Left" Height="43" Width="75" Padding="5,0,0,0" VerticalContentAlignment="Center" FontSize="16" Foreground="White">
+                                <TextBlock x:Name="txtpresents1" TextWrapping="Wrap" Text="Presents"/>
+                            </Label>
+                            <Label x:Name="lbl50maj" Content="51" Margin="85,0,0,0" FontSize="27" Padding="0,0,5,0" VerticalContentAlignment="Center" Foreground="White" Grid.Column="1" HorizontalContentAlignment="Right"/>
+                            <Label x:Name="lbl50maj1" HorizontalAlignment="Left" Height="43" Width="85" Padding="5,0,0,0" VerticalContentAlignment="Center" FontSize="16" Foreground="White" Grid.Column="1">
+                                <TextBlock x:Name="txt50maj1" TextWrapping="Wrap" Text="Simple majority"/>
+                            </Label>
+                            <Label x:Name="lbl67maj" Content="67" Margin="85,0,0,0" FontSize="27" Padding="0" VerticalContentAlignment="Center" Foreground="White" HorizontalContentAlignment="Right" Grid.Row="1"/>
+                            <Label x:Name="lbl67maj1" HorizontalAlignment="Left" Height="43" Width="85" Padding="5,0,0,0" VerticalContentAlignment="Center" FontSize="16" Foreground="White" Grid.Row="1">
+                                <TextBlock x:Name="txt67maj1" TextWrapping="Wrap" Text="2/3 majority"/>
+                            </Label>
+                            <Label x:Name="lbl20maj" Content="20" Margin="85,0,0,0" FontSize="27" Padding="0,0,5,0" VerticalContentAlignment="Center" Foreground="White" Grid.Column="1" HorizontalContentAlignment="Right" Grid.Row="1"/>
+                            <Label x:Name="lbl20maj1" Content="20%" HorizontalAlignment="Left" Height="43" Width="85" Padding="5,0,0,0" VerticalContentAlignment="Center" FontSize="16" Foreground="White" Grid.Column="1" Grid.Row="1"/>
+                        </Grid>
+                        <Grid x:Name="grid_timer1" Height="86" Visibility="Collapsed">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="101*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="101*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label x:Name="lblmaohao" Content=":" Grid.Column="1" Foreground="White" FontSize="80" HorizontalContentAlignment="Center" Padding="0" VerticalContentAlignment="Center" Margin="0,-16,0,0"/>
+                            <Label x:Name="lbltime_mm" Content="00" Foreground="White" FontSize="80" HorizontalContentAlignment="Right" Padding="0" VerticalContentAlignment="Center" Margin="0,-16,0,0"/>
+                            <Label x:Name="lbltime_ss" Content="00" Foreground="White" FontSize="80" Padding="0" VerticalContentAlignment="Bottom" Margin="0,-16,10,0" Grid.Column="2"/>
+                        </Grid>
+                    </StackPanel>
+                </Canvas>
+            </Grid>
+        </Canvas>
+        <Grid x:Name="grid_title" Grid.Column="1" Grid.Row="1" Background="#E590EE90" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblconf" Content="BJMUNC2015  联合国大会第一委员会" Margin="10,0,0,0" Foreground="White" FontSize="19" Padding="0" VerticalContentAlignment="Center"/>
+            <Label x:Name="lblopic" Content="议题  第1会期" Grid.Column="1" FontSize="19" HorizontalContentAlignment="Right" Padding="0" Foreground="White" Margin="0,0,10,0" VerticalContentAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="grid_main" Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" Visibility="Collapsed">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#E5FFFFFF" Offset="0"/>
+                    <GradientStop Color="#AAFFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <WebBrowser x:Name="fileview" Grid.Row="1" Visibility="Collapsed" OpacityMask="White" />
+            <TextBox x:Name="lblmain" TextWrapping="Wrap" Text="TextBox" BorderThickness="0" FontSize="27" SelectionBrush="{x:Null}" HorizontalContentAlignment="Center" Cursor="Arrow" Background="{x:Null}" IsReadOnly="True"/>
+            <Grid x:Name="grid_list" Grid.Row="2" Margin="10,0" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="grid_list_main" Grid.ColumnSpan="3" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="64"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lbl_nation_1" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0">
+                        <TextBlock x:Name="lbl_nationt_1" TextWrapping="Wrap" Text="Nation-1" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_1" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0"/>
+                    <Label x:Name="lbl_nation_2" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="1">
+                        <TextBlock x:Name="lbl_nationt_2" TextWrapping="Wrap" Text="Nation-2" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_2" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="1"/>
+                    <Label x:Name="lbl_nation_3" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="2">
+                        <TextBlock x:Name="lbl_nationt_3" TextWrapping="Wrap" Text="Nation-3" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_3" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="2"/>
+                    <Label x:Name="lbl_nation_4" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="3">
+                        <TextBlock x:Name="lbl_nationt_4" TextWrapping="Wrap" Text="Nation-4" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_4" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="3"/>
+                    <Label x:Name="lbl_nation_5" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="4">
+                        <TextBlock x:Name="lbl_nationt_5" TextWrapping="Wrap" Text="Nation-5" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_5" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="4"/>
+                    <Label x:Name="lbl_nation_6" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="5">
+                        <TextBlock x:Name="lbl_nationt_6" TextWrapping="Wrap" Text="Nation-6" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_6" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="5"/>
+                    <Label x:Name="lbl_nation_7" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="6">
+                        <TextBlock x:Name="lbl_nationt_7" TextWrapping="Wrap" Text="Nation-7" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_7" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="6"/>
+                    <Label x:Name="lbl_nation_8"  VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="7">
+                        <TextBlock x:Name="lbl_nationt_8" TextWrapping="Wrap" Text="Nation-8" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_8" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="7"/>
+                    <Label x:Name="lbl_nation_9" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="8">
+                        <TextBlock x:Name="lbl_nationt_9" TextWrapping="Wrap" Text="Nation-9" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_9" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="8"/>
+                    <Label x:Name="lbl_nation_10"  VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="9">
+                        <TextBlock x:Name="lbl_nationt_10" TextWrapping="Wrap" Text="Nation-10" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_10" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="9"/>
+                    <Label x:Name="lbl_nation_11" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_11" TextWrapping="Wrap" Text="Nation-11" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_11" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0"/>
+                    <Label x:Name="lbl_nation_12" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="1" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_12" TextWrapping="Wrap" Text="Nation-12" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_12" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="1"/>
+                    <Label x:Name="lbl_nation_13" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="2" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_13" TextWrapping="Wrap" Text="Nation-13" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_13" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="2"/>
+                    <Label x:Name="lbl_nation_14" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="3" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_14" TextWrapping="Wrap" Text="Nation-14" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_14" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="3"/>
+                    <Label x:Name="lbl_nation_15" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="4" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_15" TextWrapping="Wrap" Text="Nation-15" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_15" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="4"/>
+                    <Label x:Name="lbl_nation_16" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="5" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_16" TextWrapping="Wrap" Text="Nation-16" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_16" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="5"/>
+                    <Label x:Name="lbl_nation_17" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="6" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_17" TextWrapping="Wrap" Text="Nation-17" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_17" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="6"/>
+                    <Label x:Name="lbl_nation_18"  VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="7" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_18" TextWrapping="Wrap" Text="Nation-18" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_18" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="7"/>
+                    <Label x:Name="lbl_nation_19" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="8" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_19" TextWrapping="Wrap" Text="Nation-19" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_19" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="8"/>
+                    <Label x:Name="lbl_nation_20"  VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="9" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_20" TextWrapping="Wrap" Text="Nation-20" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_20" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="9"/>
+                    <Label x:Name="lbl_nation_21" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_21" TextWrapping="Wrap" Text="Nation-21" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_21" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0"/>
+                    <Label x:Name="lbl_nation_22" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="1" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_22" TextWrapping="Wrap" Text="Nation-22" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_22" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="1"/>
+                    <Label x:Name="lbl_nation_23" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="2" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_23" TextWrapping="Wrap" Text="Nation-23" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_23" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="2"/>
+                    <Label x:Name="lbl_nation_24" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="3" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_24" TextWrapping="Wrap" Text="Nation-24" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_24" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="3"/>
+                    <Label x:Name="lbl_nation_25" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="4" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_25" TextWrapping="Wrap" Text="Nation-25" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_25" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="4"/>
+                    <Label x:Name="lbl_nation_26" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="5" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_26" TextWrapping="Wrap" Text="Nation-26" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_26" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="5"/>
+                    <Label x:Name="lbl_nation_27" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="6" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_27" TextWrapping="Wrap" Text="Nation-27" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_27" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="6"/>
+                    <Label x:Name="lbl_nation_28"  VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="7" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_28" TextWrapping="Wrap" Text="Nation-28" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_28" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="7"/>
+                    <Label x:Name="lbl_nation_29" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="8" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_29" TextWrapping="Wrap" Text="Nation-29" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_29" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="8"/>
+                    <Label x:Name="lbl_nation_30"  VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="9" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_30" TextWrapping="Wrap" Text="Nation-30" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_30" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="9"/>
+
+                    <Label x:Name="lbl_nations_pagenummer" Content="Page 1 of 1" Margin="5,5,5,0" Grid.Row="10" FontSize="19" Grid.ColumnSpan="2" Padding="0"/>
+                </Grid>
+                <Grid x:Name="grid_list_wide" Grid.Column="3" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="64"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lbl_nation_31" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0">
+                        <TextBlock x:Name="lbl_nationt_31" TextWrapping="Wrap" Text="Nation-31" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_31" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0"/>
+                    <Label x:Name="lbl_nation_32" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="1">
+                        <TextBlock x:Name="lbl_nationt_32" TextWrapping="Wrap" Text="Nation-32" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_32" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="1"/>
+                    <Label x:Name="lbl_nation_33" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="2">
+                        <TextBlock x:Name="lbl_nationt_33" TextWrapping="Wrap" Text="Nation-33" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_33" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="2"/>
+                    <Label x:Name="lbl_nation_34" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="3">
+                        <TextBlock x:Name="lbl_nationt_34" TextWrapping="Wrap" Text="Nation-34" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_34" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="3"/>
+                    <Label x:Name="lbl_nation_35" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="4">
+                        <TextBlock x:Name="lbl_nationt_35" TextWrapping="Wrap" Text="Nation-35" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_35" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="4"/>
+                    <Label x:Name="lbl_nation_36" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="5">
+                        <TextBlock x:Name="lbl_nationt_36" TextWrapping="Wrap" Text="Nation-36" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_36" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="5"/>
+                    <Label x:Name="lbl_nation_37" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="6">
+                        <TextBlock x:Name="lbl_nationt_37" TextWrapping="Wrap" Text="Nation-37" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_37" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="6"/>
+                    <Label x:Name="lbl_nation_38"  VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="7">
+                        <TextBlock x:Name="lbl_nationt_38" TextWrapping="Wrap" Text="Nation-38" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_38" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="7"/>
+                    <Label x:Name="lbl_nation_39" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="8">
+                        <TextBlock x:Name="lbl_nationt_39" TextWrapping="Wrap" Text="Nation-39" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_39" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="8"/>
+                    <Label x:Name="lbl_nation_40"  VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="9">
+                        <TextBlock x:Name="lbl_nationt_40" TextWrapping="Wrap" Text="Nation-40" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_40" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="9"/>
+                </Grid>
+                <Grid x:Name="grid_list_extention" Grid.ColumnSpan="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="64"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lbl_nation_41" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0">
+                        <TextBlock x:Name="lbl_nationt_41" TextWrapping="Wrap" Text="Nation-41" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_41" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0"/>
+                    <Label x:Name="lbl_nation_42" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="1">
+                        <TextBlock x:Name="lbl_nationt_42" TextWrapping="Wrap" Text="Nation-42" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_42" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="1"/>
+                    <Label x:Name="lbl_nation_43" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="2">
+                        <TextBlock x:Name="lbl_nationt_43" TextWrapping="Wrap" Text="Nation-43" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_43" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="2"/>
+                    <Label x:Name="lbl_nation_44" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="3">
+                        <TextBlock x:Name="lbl_nationt_44" TextWrapping="Wrap" Text="Nation-44" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_44" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="3"/>
+                    <Label x:Name="lbl_nation_45" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="4">
+                        <TextBlock x:Name="lbl_nationt_45" TextWrapping="Wrap" Text="Nation-45" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_45" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="4"/>
+                    <Label x:Name="lbl_nation_51" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_51" TextWrapping="Wrap" Text="Nation-51" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_51" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0"/>
+                    <Label x:Name="lbl_nation_52" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="1" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_52" TextWrapping="Wrap" Text="Nation-52" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_52" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="1"/>
+                    <Label x:Name="lbl_nation_53" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="2" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_53" TextWrapping="Wrap" Text="Nation-53" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_53" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="2"/>
+                    <Label x:Name="lbl_nation_54" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="3" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_54" TextWrapping="Wrap" Text="Nation-54" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_54" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="3"/>
+                    <Label x:Name="lbl_nation_55" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="4" Grid.Column="2">
+                        <TextBlock x:Name="lbl_nationt_55" TextWrapping="Wrap" Text="Nation-55" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_55" Content="Mark" Grid.Column="3" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="4"/>
+                    <Label x:Name="lbl_nation_61" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_61" TextWrapping="Wrap" Text="Nation-61" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_61" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0"/>
+                    <Label x:Name="lbl_nation_62" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="1" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_62" TextWrapping="Wrap" Text="Nation-62" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_62" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="1"/>
+                    <Label x:Name="lbl_nation_63" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="2" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_63" TextWrapping="Wrap" Text="Nation-63" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_63" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="2"/>
+                    <Label x:Name="lbl_nation_64" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="3" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_64" TextWrapping="Wrap" Text="Nation-64" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_64" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="3"/>
+                    <Label x:Name="lbl_nation_65" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="4" Grid.Column="4">
+                        <TextBlock x:Name="lbl_nationt_65" TextWrapping="Wrap" Text="Nation-65" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_65" Content="Mark" Grid.Column="5" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="4"/>
+
+                </Grid>
+                <Grid x:Name="grid_list_wide_ext" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="64"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lbl_nation_71" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0">
+                        <TextBlock x:Name="lbl_nationt_71" TextWrapping="Wrap" Text="Nation-71" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_71" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0"/>
+                    <Label x:Name="lbl_nation_72" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="1">
+                        <TextBlock x:Name="lbl_nationt_72" TextWrapping="Wrap" Text="Nation-72" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_72" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="1"/>
+                    <Label x:Name="lbl_nation_73" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="2">
+                        <TextBlock x:Name="lbl_nationt_73" TextWrapping="Wrap" Text="Nation-73" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_73" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="2"/>
+                    <Label x:Name="lbl_nation_74" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="3">
+                        <TextBlock x:Name="lbl_nationt_74" TextWrapping="Wrap" Text="Nation-74" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_74" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="3"/>
+                    <Label x:Name="lbl_nation_75" VerticalContentAlignment="Center" Margin="5,5,0,0" FontSize="19" Padding="0" Grid.Row="4">
+                        <TextBlock x:Name="lbl_nationt_75" TextWrapping="Wrap" Text="Nation-75" Margin="0"/>
+                    </Label>
+                    <Label x:Name="lbl_nation_markup_75" Content="Mark" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" FontSize="19" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,5,5,0" Grid.Row="4"/>
+                </Grid>
+            </Grid>
+        </Grid>
+        <DockPanel x:Name="panel_prompt" Grid.Column="3" Grid.Row="5" Visibility="Hidden">
+            <DockPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#DD1E90FF" Offset="0"/>
+                    <GradientStop Color="#AA1E90FF" Offset="1"/>
+                </LinearGradientBrush>
+            </DockPanel.Background>
+            <Grid x:Name="grid_totaltime" Height="67" VerticalAlignment="Top" DockPanel.Dock="Top" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lbl_totaltime" Content="00:00" Margin="4,-8,10,0" FontSize="53" Foreground="White" Grid.Column="1"/>
+                <Label x:Name="lbl_totaltime1" Foreground="White" Padding="13,9,5,5" FontSize="21" Margin="0,0,1,0">
+                    <TextBlock x:Name="lblt_totaltime" TextWrapping="Wrap" Text="TOTAL TIME"/>
+                </Label>
+            </Grid>
+            <Grid x:Name="grid_nieuws" DockPanel.Dock="Bottom" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="41"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="lbl_cxxctr" Content="Interlock Centre" FontSize="27" Padding="13,5,5,0" Foreground="White" Grid.ColumnSpan="2"/>
+                <Label x:Name="lbl_nieuwstitel" Foreground="White" FontSize="19" FontWeight="Bold" Padding="13,0" Grid.Row="1" Grid.ColumnSpan="2" MaxHeight="51">
+                    <TextBlock x:Name="txt_nieuwstitel" TextWrapping="WrapWithOverflow" Text="暂无未读的新消息" Width="211" MaxHeight="51"/>
+                </Label>
+                <Label x:Name="lbl_nieuwscontent" FontSize="19" Padding="13,5,13,13" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Auto" VerticalContentAlignment="Bottom" MaxHeight="190" VerticalAlignment="Bottom" Grid.Row="2" Grid.ColumnSpan="2">
+                    <TextBlock x:Name="txt_nieuwscontent" TextWrapping="Wrap" Text="新的消息到达时，将立即在这里显示。" TextTrimming="WordEllipsis" Width="211"/>
+                </Label>
+            </Grid>
+            <Grid x:Name="grid_prompt">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="41"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label x:Name="lbl_prompt1" Content="会场提示" FontSize="27" Padding="13,5,5,0" Foreground="White"/>
+                <Label x:Name="lbl_promptcontent" Grid.Row="1" Padding="13,5,5,5">
+                    <TextBlock x:Name="txt_promptcontent" TextWrapping="Wrap" Text="暂无可用的会场提示" FontSize="19" Foreground="White" Width="215"/>
+                </Label>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</UserControl>

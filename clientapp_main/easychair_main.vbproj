@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2A81FE6-5649-4E52-AE43-1D9FB2C920CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>clientapp_main.My.MyApplication</StartupObject>
+    <RootNamespace>clientapp_main</RootNamespace>
+    <AssemblyName>clientapp_main</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>clientapp_main.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>clientapp_main.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CLcore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Console-link\server_holder\bin\Debug\CLcore.dll</HintPath>
+    </Reference>
+    <Reference Include="LanguageScript, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LanguageScript\bin\Debug\LanguageScript.dll</HintPath>
+    </Reference>
+    <Reference Include="Mammoth, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mammoth.1.4.0.0\lib\net45\Mammoth.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>C:\Users\CRH380B-6216L\Downloads\DockPanel_2.4_Bin\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="cabinet.Designer.vb">
+      <DependentUpon>cabinet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cabinet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <None Include="Dialog1.vb">
+      <SubType>Form</SubType>
+    </None>
+    <Compile Include="Dialog_CustomMsg.Designer.vb">
+      <DependentUpon>Dialog_CustomMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_CustomMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_FileIntro.Designer.vb">
+      <DependentUpon>Dialog_FileIntro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_FileIntro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_PressCentre.Designer.vb">
+      <DependentUpon>Dock_PressCentre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_PressCentre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_CrisisWriter.Designer.vb">
+      <DependentUpon>Dock_CrisisWriter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_CrisisWriter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_FileManage.Designer.vb">
+      <DependentUpon>Dock_FileManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_FileManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_FileView.Designer.vb">
+      <DependentUpon>Dock_FileView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_FileView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_MainScreen.Designer.vb">
+      <DependentUpon>Dock_MainScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_MainScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_Moderated.Designer.vb">
+      <DependentUpon>Dock_Moderated.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_Moderated.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_NationDetail.Designer.vb">
+      <DependentUpon>Dock_NationDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_NationDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_NationList.Designer.vb">
+      <DependentUpon>Dock_NationList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_NationList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_RecordInput.Designer.vb">
+      <DependentUpon>Dock_RecordInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_RecordInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_RecordView.Designer.vb">
+      <DependentUpon>Dock_RecordView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_RecordView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_SpeakersList.Designer.vb">
+      <DependentUpon>Dock_SpeakersList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_SpeakersList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_TaskWindow.Designer.vb">
+      <DependentUpon>Dock_TaskWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_TaskWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_Timer.Designer.vb">
+      <DependentUpon>Dock_Timer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_Timer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock_WaitControl.Designer.vb">
+      <DependentUpon>Dock_WaitControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dock_WaitControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motion.Designer.vb">
+      <DependentUpon>Motion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Motion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewCrisis.Designer.vb">
+      <DependentUpon>NewCrisis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewCrisis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFile.Designer.vb">
+      <DependentUpon>NewFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMeeting.Designer.vb">
+      <DependentUpon>NewMeeting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewMeeting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewSession.Designer.vb">
+      <DependentUpon>NewSession.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewSession.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recordaccess.vb" />
+    <Compile Include="SelectSponsors.Designer.vb">
+      <DependentUpon>SelectSponsors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectSponsors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetDelegate.Designer.vb">
+      <DependentUpon>SetDelegate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetDelegate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vote.Designer.vb">
+      <DependentUpon>Vote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xmlsaveload.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cabinet.resx">
+      <DependentUpon>cabinet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_CustomMsg.resx">
+      <DependentUpon>Dialog_CustomMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_FileIntro.resx">
+      <DependentUpon>Dialog_FileIntro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_PressCentre.resx">
+      <DependentUpon>Dock_PressCentre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_CrisisWriter.resx">
+      <DependentUpon>Dock_CrisisWriter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_FileManage.resx">
+      <DependentUpon>Dock_FileManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_FileView.resx">
+      <DependentUpon>Dock_FileView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_MainScreen.resx">
+      <DependentUpon>Dock_MainScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_Moderated.resx">
+      <DependentUpon>Dock_Moderated.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_NationDetail.resx">
+      <DependentUpon>Dock_NationDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_NationList.resx">
+      <DependentUpon>Dock_NationList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_RecordInput.resx">
+      <DependentUpon>Dock_RecordInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_RecordView.resx">
+      <DependentUpon>Dock_RecordView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_SpeakersList.resx">
+      <DependentUpon>Dock_SpeakersList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_TaskWindow.resx">
+      <DependentUpon>Dock_TaskWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_Timer.resx">
+      <DependentUpon>Dock_Timer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock_WaitControl.resx">
+      <DependentUpon>Dock_WaitControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motion.resx">
+      <DependentUpon>Motion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCrisis.resx">
+      <DependentUpon>NewCrisis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFile.resx">
+      <DependentUpon>NewFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMeeting.resx">
+      <DependentUpon>NewMeeting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewSession.resx">
+      <DependentUpon>NewSession.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSponsors.resx">
+      <DependentUpon>SelectSponsors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetDelegate.resx">
+      <DependentUpon>SetDelegate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vote.resx">
+      <DependentUpon>Vote.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Cabinet.png" />
+    <Content Include="Resources\Clear.png" />
+    <Content Include="Resources\Pause.png" />
+    <Content Include="Resources\StartTiming.png" />
+    <Content Include="TextFile1.txt" />
+    <None Include="packages.config" />
+    <None Include="Resources\SaveAll.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\Addnew.png" />
+    <None Include="Resources\NationDetail.png" />
+    <None Include="Resources\Reload.png" />
+    <None Include="Resources\RollCall.png" />
+    <None Include="Resources\Prev.png" />
+    <None Include="Resources\Next.png" />
+    <None Include="Resources\Last.png" />
+    <None Include="Resources\Fitst.png" />
+    <None Include="Resources\FileView.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\WaitControl.png" />
+    <None Include="Resources\Timer.png" />
+    <None Include="Resources\SpeakersList.png" />
+    <None Include="Resources\RecordWriter.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\NationList.png" />
+    <None Include="Resources\Moderated.png" />
+    <None Include="Resources\MainScreen.png" />
+    <None Include="Resources\FileManage.png" />
+    <None Include="Resources\CrisisWriter.png" />
+    <None Include="Resources\SendToScreen.png" />
+    <None Include="Resources\ScreenRestore.png" />
+    <None Include="DisposalCodes.txt" />
+    <Content Include="lang\file1.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\file2.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="lang\info1.edl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lang\info2.edl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="lang\motion1.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\motion2.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\present1.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\present2.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\scnation1.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\scnation2.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\scscript1.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\scscript2.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\timer1.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\timer2.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\vote1.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\vote2.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\yield1.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lang\yield2.edl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\awegf.png" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\Record2.vbproj">
+      <Project>{8276f12b-e8c6-412c-9ca6-7a68393c20ac}</Project>
+      <Name>Record2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DocConverter\DocConverter.vbproj">
+      <Project>{aa313b58-fdf6-4f38-8dd0-68b02ae4dd35}</Project>
+      <Name>DocConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Screen\Screen.vbproj">
+      <Project>{EC00021A-6991-45F3-8EA9-B7732D9F6FD6}</Project>
+      <Name>Screen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoundControl\SoundControl.vbproj">
+      <Project>{68474a11-c1b1-4bcd-8868-ae88d9c69e16}</Project>
+      <Name>SoundControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XmlAccess\XmlAccess.vbproj">
+      <Project>{50182816-929f-4457-af4a-e0dcdf064383}</Project>
+      <Name>XmlAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
